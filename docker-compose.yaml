@@ -1,0 +1,13 @@
+ # Docker Compose Configuration
+ # visit https://docs.docker.com/compose/
+
+ version: '3.8'
+ services:
+   # app service for your backend
+   app:
+     container_name: ecomfront
+     build:
+       context: ./
+       dockerfile: Dockerfile
+     ports:
+       - '80:80'

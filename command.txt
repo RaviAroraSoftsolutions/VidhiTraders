@@ -1,0 +1,30 @@
+backend http://3.7.55.20:3002/
+
+
+
+
+mongodump --uri mongodb+srv://Ruben:44BTGtmQlGsg4bvL@cluster0.6uprek7.mongodb.net/ecom --out e:\web\Data\ecom
+
+
+mongorestore --uri  "mongodb+srv://RaviMyKing:C00lwater@atlascluster.7rotwhm.mongodb.net" --db myking   E:\Web\Data\myking\myking080202020\myking
+
+
+
+npm run build
+
+ npm install -g serve
+  serve -s build
+
+pm2 server build 80 --spa
+
+
+c
+
+pm2 start src/server.js --name ecommb
+
+pm2 start  node_modules/react-scripts/scripts/start.js --name "ecommf"
+
+
+https://medium.com/geekculture/deploying-a-react-app-and-a-node-js-server-on-a-single-machine-with-pm2-and-nginx-15f17251ee74
+https://medium.com/@seanconrad_25426/setting-up-a-create-react-app-with-pm2-and-nginx-on-digitalocean-1fd9c060ac1f
+https://codemacaw.com/2023/08/06/integrate-and-run-a-node-and-react-application-to-aws-ec2-instance/
